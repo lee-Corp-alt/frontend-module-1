@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <link rel="icon" href="favicon.png" sizes="any">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <meta name="description" content="My first HTML project">
+  </head>
+  <body>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML docs</a>
+    </nav>
+
+
+ <h1>Laurand Epey Ebong </h1>
+<figure>
+      <img src="picolo.jpeg" alt="me wearing a tie" width="240" height="240" loading="lazy" decoding="async">
+      <figcaption>Photo of me</figcaption>
+    </figure>
+
+    <main>
+      <section id="about">
+    <!--This is my about section -->
+    <h2 id="About">About Me</h2>
+     
+    <p>My goal is to become a  <em>becoming a fullstack developer</em>.</p>
+    <p>I learn <abbr title="HyperText Markup Language">HTML</abbr>,<abbr title="Cascading Style Sheet">CSS</abbr> and <abbr title="Hyper text Preproccessor">PHP</abbr> because <dfn>fullstack</dfn> is my path.</p>
+    <p>Target date: <time datetime="2026-08-03">August  2026</time>.</p>
+    <hr>
+
+    <details>
+      <summary>I am a student of IUGET bonamousadi and i study osftware engineering. I 
+        which to continue my studies and gain alot of experience so as to become a proffesional developer and build systems for companies </summary>
+      <p>I love playing football , listening to musics and playing games to </p>
+    </details>
+    <p>Course progress: <progress value="65" max="100">65%</progress></p>
+    <p data-module="html-1" title="HTML Module 1 portfolio">Portfolio page</p>
+    
+      </section>
+      <section id="Skills">
+     <!--This is my skill section -->
+    <h2 id="skills">Skills</h2>
+    <ul>
+      <li>frontend developmnet </li>
+      <li>backend development </li>
+      <li>Wordpress</li>
+    </ul>
+
+      </section>
+
+     
+       <section id="Media">
+     <!--This is my skill section -->
+    <h2 id="media">Media</h2>
+     <iframe
+      src="https://www.youtube.com/embed/7NaeDBTRY1k"
+      title="HTML tutorial video"
+      width="960"
+      height="315"
+      loading="lazy"
+    ></iframe>
+    
+      </section>
+
+
+
+      <section id="contact">
+    <!--This is my Contact  section -->
+    <h2 id="Contact">Contact</h2>
+
+    <!-- Demo uses GET; production would use method="post" -->
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Contact me</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="80" placeholder="Your full name">
+        <br> <br>
+        <label for="email">Email</label>
+        <input type="email" id="email"  autocomplete="email" name="email" required placeholder="you@example.com">
+        <br> <br>
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="">Choose...</option>
+          <optgroup label="Central Africa">
+            <option value="cm">Cameroon</option>
+          </optgroup>
+          <optgroup label="West Africa">
+            <option value="ng">Nigeria</option>
+          </optgroup>
+        </select>
+        <br> <br>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Your message"></textarea>
+       <br><br>
+        <output name="reply-hint" for="message">Typical reply: within 24 hours</output>
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+      </fieldset>
+    </form>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <address>
+        <a href="mailto:leeepey@gmail.com">Email me</a><br>
+        <a href="tel:+237672223730">Call me</a>
+      </address>
+      <p><a href="mycvpro.pdf" download>Download my resume</a></p>
+      &copy; 2026 Your laurand Epey
+    </footer>
+  
+        
+    </body>
+    </html>
+    
