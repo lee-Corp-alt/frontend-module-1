@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" >
+    
      <link rel="icon" href="favicon.png" sizes="any">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,17 +21,19 @@
 
  <h1>Laurand Epey Ebong </h1>
 <figure>
-      <img src="picolo.jpeg" alt="me wearing a tie" width="240" height="240" loading="lazy" decoding="async">
-      <figcaption>Photo of me</figcaption>
+      <img src="picolo.jpeg" alt="me wearing a tie" width="240" height="240" loading="lazy" decoding="async" class="profile-img">
+      <figcaption class="figu">Photo of me</figcaption>
     </figure>
 
     <main>
-      <section id="about">
+
+      <div class="row">
+      <section id="about" class="card">
     <!--This is my about section -->
     <h2 id="About">About Me</h2>
      
-    <p>My goal is to become a  <em>becoming a fullstack developer</em>.</p>
-    <p>I learn <abbr title="HyperText Markup Language">HTML</abbr>,<abbr title="Cascading Style Sheet">CSS</abbr> and <abbr title="Hyper text Preproccessor">PHP</abbr> because <dfn>fullstack</dfn> is my path.</p>
+    <p class="highlight">My goal is to become a  <em>becoming a fullstack developer</em>.</p>
+    <p class="highlight">I learn <abbr title="HyperText Markup Language">HTML</abbr>,<abbr title="Cascading Style Sheet">CSS</abbr> and <abbr title="Hyper text Preproccessor">PHP</abbr> because <dfn>fullstack</dfn> is my path.</p>
     <p>Target date: <time datetime="2026-08-03">August  2026</time>.</p>
     <hr>
 
@@ -42,10 +46,10 @@
     <p data-module="html-1" title="HTML Module 1 portfolio">Portfolio page</p>
     
       </section>
-      <section id="Skills">
+      <section id="Skills" class="card ">
      <!--This is my skill section -->
-    <h2 id="skills">Skills</h2>
-    <ul>
+    <h2 id="skills" class="section-card ">Skills</h2>
+    <ul class="skills-grid">
       <li>frontend developmnet </li>
       <li>backend development </li>
       <li>Wordpress</li>
@@ -54,13 +58,13 @@
       </section>
 
      
-       <section id="Media">
+       <section id="Media" class="med">
      <!--This is my skill section -->
     <h2 id="media">Media</h2>
      <iframe
       src="https://www.youtube.com/embed/7NaeDBTRY1k"
       title="HTML tutorial video"
-      width="960"
+      width="650"
       height="315"
       loading="lazy"
     ></iframe>
@@ -69,12 +73,12 @@
 
 
 
-      <section id="contact">
+      <section id="contact" class="section">
     <!--This is my Contact  section -->
     <h2 id="Contact">Contact</h2>
 
     <!-- Demo uses GET; production would use method="post" -->
-    <form action="#" method="get">
+    <form action="#" method="get" class="contact-form">
       <fieldset>
         <legend>Contact me</legend>
         <label for="name">Name</label>
@@ -104,16 +108,19 @@
     </form>
 
       </section>
-
+    
+      </div>
     </main>
 
     <footer>
+      <div class="ad-info">
       <address>
         <a href="mailto:leeepey@gmail.com">Email me</a><br>
         <a href="tel:+237672223730">Call me</a>
       </address>
       <p><a href="mycvpro.pdf" download>Download my resume</a></p>
-      &copy; 2026 Your laurand Epey
+      &copy; 2026  laurand Epey
+      </div>
     </footer>
   
         
