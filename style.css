@@ -266,6 +266,19 @@ iframe{
   .hero { text-align: center; align-items: center; }
 }
 
+.api-note {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 1rem;
+  margin-left:100px;
+}
+.contact-form{
+  margin-left:50px;
+  
+}
 
+fieldset{
+  margin-left:50pxpx;
+}
 
 

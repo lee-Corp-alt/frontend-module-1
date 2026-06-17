@@ -79,14 +79,14 @@
 
 
 
-      <section id="contact" class="section">
+      <section id="contact"  class="card">
     <!--This is my Contact  section -->
     <h2 id="Contact">Contact</h2>
 
     <!-- Demo uses GET; production would use method="post" -->
     <form action="#" method="get" class="contact-form">
-      <fieldset>
-        <legend>Contact me</legend>
+      <fieldset style="border-radius: 20px;">
+        <legend style="font-weight: 700;">Contact me</legend>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required minlength="2" maxlength="80" placeholder="Your full name">
         <br> <br>
@@ -125,11 +125,12 @@
         <a href="tel:+237672223730">Call me</a>
       </address>
       <p><a href="mycvpro.pdf" download>Download my resume</a></p>
-      &copy; 2026  laurand Epey
+     
+          <p>© <span id="year"> </span> Laurand Epey</p>
       </div>
     </footer>
   
-        
+      <script src="script.js" defer></script>
     </body>
     </html>
     
