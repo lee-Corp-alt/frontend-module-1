@@ -64,7 +64,7 @@ console.log(longSkills);
 const contact = {
   name: authorName,
   email: "leeepey@gmail.com",
-  github: "https://github.com/lee-corp-alt",
+  github: "https://github.com/lee-Corp-alt",
   available: true,
 };
 
@@ -179,3 +179,20 @@ async function showPostTitle() {
 }
 
 showPostTitle();
+
+//-------------------------------------------
+
+async function loadGitHubCard() {
+  const status = document.querySelector("#gh-status");
+  if (!status) return;
+  try {
+    const res = await fetch("https://api.github.com/users/lee-Corp-alt");
+    if (!res.ok) throw new Error("Profile not found");
+    const profile = await res.json();
+    status.textContent = `${profile.name || profile.login} — ${profile.public_repos} public repos`;
+  } catch (err) {
+    status.textContent = "Could not load GitHub profile.";
+  }
+}
+
+loadGitHubCard();
